@@ -1,0 +1,24 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"first_name": {
+				"__TYPE__": "FieldContent",
+				"value": "troops",
+				"type": "Text"
+			},
+			"last_name": {
+				"__TYPE__": "FieldContent",
+				"value": "glass",
+				"type": "Text"
+			},
+			"profession": {
+				"__TYPE__": "FieldContent",
+				"value": "practice",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]
