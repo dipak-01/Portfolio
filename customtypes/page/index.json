@@ -17,6 +17,9 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "content_index": {
+              "type": "SharedSlice"
+            },
             "tech_stack": {
               "type": "SharedSlice"
             },
@@ -35,13 +38,6 @@
         },
         "type": "Text"
       },
-      "meta_description": {
-        "config": {
-          "label": "Meta Description",
-          "placeholder": "A brief summary of the page"
-        },
-        "type": "Text"
-      },
       "meta_image": {
         "config": {
           "constraint": {
@@ -52,6 +48,13 @@
           "thumbnails": []
         },
         "type": "Image"
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        }
       }
     }
   }

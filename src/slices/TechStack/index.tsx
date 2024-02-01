@@ -25,7 +25,7 @@ const TechStack = ({ slice }: TechStackProps): JSX.Element => {
       // create as many GSAP animations and/or ScrollTriggers here as you want...
       const tl = gsap.timeline({
         scrollTrigger: {
-          trigger:component.current,
+          trigger: component.current,
           // pin: true, // pin the trigger element while active
           start: "top bottom",
           end: "bottom top",
@@ -49,7 +49,7 @@ const TechStack = ({ slice }: TechStackProps): JSX.Element => {
               : gsap.utils.random(600, 400);
           },
           ease: "power1.inOut",
-        },
+        }
       );
     }, component);
     return () => ctx.revert(); // cleanup!
