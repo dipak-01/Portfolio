@@ -53,7 +53,7 @@ export const ContentList = ({
               end: "bottom center",
               toggleActions: "play none none none",
             },
-          }
+          },
         );
       });
 
@@ -106,7 +106,6 @@ export const ContentList = ({
   };
 
   const contentImages = items.map((item) => {
-    console.log("inside the img");
     const image = isFilled.image(item.data.hover_image)
       ? item.data.hover_image
       : fallbackItemImage;
@@ -145,8 +144,9 @@ export const ContentList = ({
                   onMouseEnter={() => onMouseEnter(index)}
                 >
                   <Link
-                    href={urlPrefix + "/" + item.uid}
-                    className="flex flex-col justify-between border-t border-t-slate-100 py-10 text-salte-200 md:flex-row"
+                    target="_blank"
+                    href="https://sahil7741.github.io/UpStyle/frontend/html/landingPage.html"
+                    className="text-salte-200 flex flex-col justify-between border-t border-t-slate-100 py-10 md:flex-row"
                   >
                     <div className="flex flex-col ">
                       <span className="text-3xl font-bold">
@@ -162,7 +162,7 @@ export const ContentList = ({
                         })}
                       </div>
                     </div>
-                    <span className="ml-auto flex gap-2 items-center text-xl font-medium md:ml-0">
+                    <span className="ml-auto flex items-center gap-2 text-xl font-medium md:ml-0">
                       {viewMoreText} <MdArrowOutward />
                     </span>
                   </Link>
@@ -173,7 +173,7 @@ export const ContentList = ({
         })}
 
         <div
-          className="hover-reveal absolute pointer-events-none top-0 -z-10 h-[320px] w-[220] rounded-lg bg-cover bg-center left-0 opacity-0 transition-[background] duration-300"
+          className="hover-reveal pointer-events-none absolute left-0 top-0 -z-10 h-[320px] w-[220] rounded-lg bg-cover bg-center opacity-0 transition-[background] duration-300"
           style={{
             backgroundImage:
               currentState !== null
