@@ -8,11 +8,6 @@
 				"value": "Blog",
 				"type": "Select"
 			},
-			"description": {
-				"__TYPE__": "FieldContent",
-				"value": "later",
-				"type": "Text"
-			},
 			"view_more_text": {
 				"__TYPE__": "FieldContent",
 				"value": "bee",
@@ -45,6 +40,17 @@
 				"__TYPE__": "FieldContent",
 				"value": "cause",
 				"type": "Text"
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Commodo nulla deserunt quis consequat. Anim eiusmod cillum cillum quis laborum ex adipisicing aliquip sint proident anim enim ex tempor pariatur. Aliqua anim culpa nulla est."
+						}
+					}
+				]
 			}
 		},
 		"items": [

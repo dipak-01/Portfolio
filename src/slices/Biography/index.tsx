@@ -6,6 +6,7 @@ import { Content } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
 
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
+import { ContentList } from "../ContentIndex/ContentList";
 
 /**
  * Props for `Biography`.
@@ -38,7 +39,9 @@ const Biography = ({ slice }: BiographyProps): JSX.Element => {
           className="row-start-1 max-w-sm md:col-start-2 md:row-end-3"
         ></Avatar>
       </div>
+
     </Bounded>
+
   );
 };
 
