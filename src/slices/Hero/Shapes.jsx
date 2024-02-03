@@ -64,7 +64,7 @@ function Geometries() {
         {
             position: [-1, -1.1, 2],
             r: 0.7,
-             geometry :new THREE.BoxGeometry( 1.4, 1.4, 1.4),
+            geometry: new THREE.BoxGeometry(1.4, 1.4, 1.4),
         },
 
 

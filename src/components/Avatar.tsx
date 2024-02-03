@@ -18,7 +18,7 @@ export default function Avatar({ image, className }: AvatarProps) {
       gsap.fromTo(
         ".avatar",
         { opacity: 0, scale: 1.4 },
-        { scale: 1, opacity: 1, duration: 1.3, ease: "power3.inOut" }
+        { scale: 1, opacity: 1, duration: 1.3, ease: "power3.inOut" },
       );
 
       window.onmousemove = (e) => {
@@ -55,11 +55,11 @@ export default function Avatar({ image, className }: AvatarProps) {
               x: -10 + 20 * componentPercent.x,
               duration: 0.5,
             },
-            0
+            0,
           );
       };
     }, component);
-    return () => ctx.revert(); 
+    return () => ctx.revert();
   }, []);
 
   return (
@@ -70,7 +70,7 @@ export default function Avatar({ image, className }: AvatarProps) {
           className="avatar-image h-full w-full object-fill"
           imgixParams={{ q: 90 }}
         ></PrismicNextImage>
-        <div className="highlight absolute inset-0 hidden w-full scale-110 bg-gradient-to-tr from-transparent via white to-transparent opacity-0 md:block"></div>
+        <div className="highlight via white absolute inset-0 hidden w-full scale-110 bg-gradient-to-tr from-transparent to-transparent opacity-0 md:block"></div>
       </div>
     </div>
   );
